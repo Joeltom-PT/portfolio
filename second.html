@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Joeltom P T | Spring Boot Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+    
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    
+    .card {
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      transition: all 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .social-icon {
+      transition: all 0.3s ease;
+    }
+    
+    .social-icon:hover {
+      transform: translateY(-5px);
+    }
+    
+    .skill-badge {
+      background: rgba(99, 102, 241, 0.2);
+      border: 1px solid rgba(99, 102, 241, 0.4);
+      border-radius: 50px;
+      padding: 5px 15px;
+      font-size: 0.85rem;
+      transition: all 0.3s ease;
+    }
+    
+    .skill-badge:hover {
+      background: rgba(99, 102, 241, 0.4);
+      transform: scale(1.05);
+    }
+    
+    .animated-gradient {
+      background: linear-gradient(-45deg, #4f46e5, #7c3aed, #2563eb, #0ea5e9);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    .btn {
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 0;
+      border-radius: 100%;
+      transform: scale(1, 1) translate(-50%);
+      transform-origin: 50% 50%;
+    }
+    
+    .btn:hover:after {
+      animation: ripple 1s ease-out;
+    }
+    
+    @keyframes ripple {
+      0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(20, 20);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Particles.js Background -->
+  <div id="particles-js"></div>
+
+  <!-- Main Content -->
+  <div class="min-h-screen flex flex-col justify-center items-center px-4 py-12">
+    <div class="card p-8 md:p-12 max-w-3xl w-full">
+      <!-- Header Section with Animated Text -->
+      <div class="text-center mb-12">
+        <h1 class="text-5xl font-extrabold mb-2 animated-gradient">Joeltom P T</h1>
+        <div class="flex items-center justify-center space-x-2 mb-6">
+          <span class="inline-block h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
+          <p class="text-xl text-gray-300">Spring Boot Developer</p>
+        </div>
+        
+        <!-- Social Media Links with Hover Effects -->
+        <div class="flex justify-center space-x-8 mt-8">
+          <a href="https://www.linkedin.com/in/joeltom-p-t-14a442281/" target="_blank" class="social-icon text-blue-400 hover:text-blue-300 flex flex-col items-center">
+            <i class="fab fa-linkedin text-3xl mb-1"></i>
+            <span class="text-xs">LinkedIn</span>
+          </a>
+          <a href="https://github.com/joeltom-pt" target="_blank" class="social-icon text-gray-300 hover:text-white flex flex-col items-center">
+            <i class="fab fa-github text-3xl mb-1"></i>
+            <span class="text-xs">GitHub</span>
+          </a>
+          <a href="mailto:contact@joeltom-pt.site" class="social-icon text-yellow-400 hover:text-yellow-300 flex flex-col items-center">
+            <i class="fas fa-envelope text-3xl mb-1"></i>
+            <span class="text-xs">Email</span>
+          </a>
+          <a href="#" target="_blank" class="social-icon text-red-400 hover:text-red-300 flex flex-col items-center">
+            <i class="fas fa-file-pdf text-3xl mb-1"></i>
+            <span class="text-xs">Resume</span>
+          </a>
+        </div>
+      </div>
+      
+      <!-- About Section -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-4 flex items-center">
+          <i class="fas fa-user-circle mr-2 text-indigo-400"></i> About Me
+        </h2>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          Passionate Spring Boot developer eager to build scalable, secure, and high-performance Java applications. I am always excited to solve problems with creative and efficient solutions.
+        </p>
+        
+        <p class="text-gray-300 leading-relaxed mb-4">
+          I am keen to explore new technologies, particularly in the areas of microservices, RESTful APIs, and cloud-native development.
+        </p>
+        
+        <p class="text-gray-300 leading-relaxed mb-4">
+          My focus is on writing clean, maintainable code that delivers value and drives innovation in every project I work on.
+        </p>
+        
+        <p class="text-gray-300 leading-relaxed mb-4">
+          I thrive in collaborative environments and am eager to contribute my skills to impactful projects while continuously learning and growing.
+        </p>
+        
+      </div>
+      
+      <!-- Skills Section -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-4 flex items-center">
+          <i class="fas fa-code mr-2 text-indigo-400"></i> Technical Skills
+        </h2>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="skill-badge">Java</span>
+          <span class="skill-badge">Spring Boot</span>
+          <span class="skill-badge">React</span>
+          <span class="skill-badge">Redux</span>
+          <span class="skill-badge">Spring Security</span>
+          <span class="skill-badge">JPA/Hibernate</span>
+          <span class="skill-badge">REST APIs</span>
+          <span class="skill-badge">Microservices</span>
+          <span class="skill-badge">Docker</span>
+          <span class="skill-badge">Kubernetes</span>
+          <span class="skill-badge">MySQL</span>
+          <span class="skill-badge">MongoDB</span>
+          <span class="skill-badge">Git</span>
+          <span class="skill-badge">Redis</span>
+          <span class="skill-badge">CI/CD</span>          
+          <span class="skill-badge">Jenkins</span>
+          <span class="skill-badge">AWS</span>
+        </div>
+      </div>
+      
+      <!-- Projects Section -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-6 flex items-center">
+          <i class="fas fa-project-diagram mr-2 text-indigo-400"></i> Featured Projects
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Project 1 -->
+          <div class="bg-gray-800 bg-opacity-50 rounded-lg p-5 hover:bg-opacity-70 transition duration-300">
+            <h3 class="text-xl font-semibold mb-2 text-indigo-300">Camcorderio</h3>
+            <p class="text-gray-300 text-sm mb-3">
+              Camcorderio is a robust and scalable e-commerce platform designed to deliver a seamless shopping experience. Built with Spring Boot and Thymeleaf, it integrates a dynamic frontend with a powerful backend, leveraging PostgreSQL for efficient data management. Ideal for businesses looking to expand their online presence with a reliable and customizable solution.
+            </p>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="text-xs bg-indigo-900 bg-opacity-50 px-2 py-1 rounded">Spring Boot</span>
+              <span class="text-xs bg-indigo-900 bg-opacity-50 px-2 py-1 rounded">Thymeleaf</span>
+              <span class="text-xs bg-indigo-900 bg-opacity-50 px-2 py-1 rounded">PostgreSQL</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="https://github.com/Joeltom-PT" class="text-indigo-400 hover:text-indigo-300 text-sm flex items-center">
+                <i class="fab fa-github mr-1"></i> View Code
+              </a>
+              <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm flex items-center">
+                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        
+          <!-- Project 2 -->
+          <div class="bg-gray-800 bg-opacity-50 rounded-lg p-5 hover:bg-opacity-70 transition duration-300">
+            <h3 class="text-xl font-semibold mb-2 text-indigo-300">Qrovia</h3>
+            <p class="text-gray-300 text-sm mb-3">
+              Qrovia is an innovative event booking and streaming platform engineered for scalability and performance. Utilizing Spring Boot microservices architecture paired with a modern React frontend, it empowers users to effortlessly book events and stream content in real-time. A perfect solution for organizers and attendees seeking a flexible, high-quality digital experience.
+            </p>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="text-xs bg-indigo-900 bg-opacity-50 px-2 py-1 rounded">Spring Boot</span>
+              <span class="text-xs bg-indigo-900 bg-opacity-50 px-2 py-1 rounded">Microservices</span>
+              <span class="text-xs bg-indigo-900 bg-opacity-50 px-2 py-1 rounded">React</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="https://github.com/Joeltom-PT" class="text-indigo-400 hover:text-indigo-300 text-sm flex items-center">
+                <i class="fab fa-github mr-1"></i> View Code
+              </a>
+              <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm flex items-center">
+                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Section -->
+      <div >
+        <h2 class="text-2xl font-bold mb-6 flex items-center">
+          <i class="fas fa-paper-plane mr-2 text-indigo-400"></i> Get In Touch
+        </h2>
+        
+        <div class="bg-gray-800 bg-opacity-50 rounded-lg p-6">
+          <p class="text-gray-300 mb-4">Interested in working together? Feel free to reach out!</p>
+          
+          <a href="mailto:contact@joeltom-pt.site" class="btn inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
+            <i class="fas fa-envelope mr-2"></i> Send Message
+          </a>
+        </div>
+        <div class="text-center text-white text-sm mt-12">
+          <p>© 2025 Joeltom P T. All rights reserved.</p>
+        </div>
+      </div>     
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Particles.js
+      particlesJS('particles-js', {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#4f46e5"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            }
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 2,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#6366f1",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "grab"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 140,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      });
+      
+      // Add scroll reveal effect
+      const elements = document.querySelectorAll('.card > div');
+      
+      function checkScroll() {
+        elements.forEach(el => {
+          const rect = el.getBoundingClientRect();
+          const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+          
+          if (rect.top <= windowHeight * 0.8) {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+          }
+        });
+      }
+      
+      // Set initial styles
+      elements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      });
+      
+      // Check on load
+      checkScroll();
+      
+      // Check on scroll
+      window.addEventListener('scroll', checkScroll);
+      
+      // Add typing animation to the title
+      const title = document.querySelector('h1');
+      const originalText = title.textContent;
+      title.textContent = '';
+      
+      let i = 0;
+      const typeWriter = () => {
+        if (i < originalText.length) {
+          title.textContent += originalText.charAt(i);
+          i++;
+          setTimeout(typeWriter, 100);
+        }
+      };
+      
+      // Start typing animation after a short delay
+      setTimeout(typeWriter, 500);
+    });
+  </script>
+</body>
+</html>
